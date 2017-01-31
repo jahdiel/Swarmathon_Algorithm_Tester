@@ -1,0 +1,63 @@
+
+class Algorithm:
+
+    def __init__(self, CanvasWindow, RoverCluster, Targets, FrameRate):
+        """ Initializes the Algorithm class.
+        Parameters:
+        ------------
+            CanvasWindow : CanvasWindow object
+
+            RoverCluster : RoverCluster object
+
+            Targets : Target object
+
+            FrameRate : int
+                The framerate of the canvas.
+                It is in frames per milliseconds.
+
+        Attributes:
+        ------------
+            canvasWindow : CanvasWindow object
+
+            roverCluster : RoverCluster object
+
+            targets : Target object
+        """
+
+        self.canvasWindow = CanvasWindow
+        self.roverCluster = RoverCluster
+        self.targets = Targets
+        self.framerate = FrameRate
+
+    def mainAlgorithm(self):
+        """
+        Algorithm:
+            Move
+            Search
+            If Target found -> Pick
+            Return to nest
+            When in Nest -> Reset Rover and Release the Target
+        """
+
+        for rover in self.roverCluster.roverList:
+            rover.move()
+            t_coords, found = rover.searchTarget()
+            if found:
+                target_found = self.targets.getTargetAtPos(t_coords)
+                if rover.pickTarget(target_found):
+                    rover.returnToNest()
+
+            if rover.isInNest():
+                target = rover.resetInNest()
+                if target is not None:
+                    self.targets.removeTarget(target)
+                    print 'Target List Size:', self.targets.size
+
+    def updateRovers(self):
+        """ Updates the rovers.
+        This is where the main algorithm should be implemented.
+        """
+        self.mainAlgorithm()
+
+        self.canvasWindow.master.update_idletasks()
+        self.canvasWindow.master.after(self.framerate, self.updateRovers)
