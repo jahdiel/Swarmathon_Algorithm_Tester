@@ -40,8 +40,8 @@ master = Tk()
 canvasWindow = CanvasWindow(1000, 700, master)
 
 # Image Files
-targetImg = "D:\UPRM\NASA Swarmathon\Swarm_Algo_Tester\Media\Rock.png"
-roverImg = "D:\UPRM\NASA Swarmathon\Swarm_Algo_Tester\Media\Rover1_PNG.png"
+targetImg = "C:\Users\jahdiel.alvarez\Documents\GitHub\Swarmathon_Algorithm_Tester\Media\Rock.png"
+roverImg = "C:\Users\jahdiel.alvarez\Documents\GitHub\Swarmathon_Algorithm_Tester\Media\Rover1_PNG.png"
 
 # Targets Object
 NUM_OF_TARGETS = 50
