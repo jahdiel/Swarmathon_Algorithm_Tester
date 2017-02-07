@@ -14,6 +14,8 @@ from RoverCluster import RoverCluster
 from Targets import Targets
 from Algorithm import Algorithm
 from Tkinter import *
+from Estrella import Estrella
+from RoverEstrellao import RoverEstrellao
 
 # Algorithms
 from El_Cuadrito import Cuadrito
@@ -30,8 +32,9 @@ from El_Cuadrito import Cuadrito
 # ----------------------------
 # Set the Rover Class(inherited classes) you are using int RoverObj
 # Set the Algorithm Class(inherited classes) you are using int AlgoObj
-RoverObj = Rover
-AlgoObj = Cuadrito
+RoverObj = RoverEstrellao
+AlgoObj = Estrella
+FRAMERATE = 50
 
 # Tkinter Master Object
 master = Tk()
@@ -40,8 +43,8 @@ master = Tk()
 canvasWindow = CanvasWindow(1000, 700, master)
 
 # Image Files
-targetImg = "D:\UPRM\NASA Swarmathon\Swarm_Algo_Tester\Media\Rock.png"
-roverImg = "D:\UPRM\NASA Swarmathon\Swarm_Algo_Tester\Media\Rover1_PNG.png"
+targetImg = "C:\Users\Brian\Documents\GitHub\Swarmathon_Algorithm_Tester\Media\Rock.png"
+roverImg = "C:\Users\Brian\Documents\GitHub\Swarmathon_Algorithm_Tester\Media\Rover1_PNG.png"
 
 # Targets Object
 NUM_OF_TARGETS = 50
@@ -60,7 +63,6 @@ for i in xrange(NUM_OF_ROVERS):
 roverCluster.setRoversInNest()
 
 # Algorithm Object inherited from Algorithm Class
-FRAMERATE = 50
 algorithm = AlgoObj(canvasWindow, roverCluster, targets, FRAMERATE)
 
 # Update Canvas

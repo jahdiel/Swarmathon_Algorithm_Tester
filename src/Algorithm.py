@@ -1,5 +1,5 @@
 
-class Algorithm:
+class Algorithm(object):
 
     def __init__(self, CanvasWindow, RoverCluster, Targets, FrameRate):
         """ Initializes the Algorithm class.
