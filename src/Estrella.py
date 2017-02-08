@@ -15,10 +15,6 @@ class Estrella(Algorithm):
                 if rover.pickTarget(target_found):
                     rover.returnToNest()
 
-
-
             if rover.isInNest():
                 target = rover.resetInNest()
-                if target is not None:
-                    self.targets.removeTarget(target)
-                    print 'Target List Size:', self.targets.size
+                self.targets.removeTarget(target)
