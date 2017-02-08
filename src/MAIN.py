@@ -26,6 +26,8 @@ from RoverCluster import RoverCluster
 from Targets import Targets
 from Algorithm import Algorithm
 from Tkinter import *
+from Estrella import Estrella
+from RoverEstrellao import RoverEstrellao
 
 # Algorithms
 from El_Cuadrito import Cuadrito

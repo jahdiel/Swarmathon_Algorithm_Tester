@@ -24,7 +24,7 @@ from PIL import ImageTk
 import math
 import numpy as np
 
-class Rover:
+class Rover(object):
 
     def __init__(self, CanvasWindow, pos_x, pos_y, number):
         """ Initializes the Rover class.
