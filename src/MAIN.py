@@ -44,8 +44,8 @@ from El_Cuadrito import Cuadrito
 # ----------------------------
 # Set the Rover Class(inherited classes) you are using int RoverObj
 # Set the Algorithm Class(inherited classes) you are using int AlgoObj
-RoverObj = Rover
-AlgoObj = Cuadrito
+RoverObj = RoverEstrellao
+AlgoObj = Estrella
 
 # Tkinter Master Object
 master = Tk()
