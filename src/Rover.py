@@ -74,6 +74,7 @@ class Rover(object):
         self.velocity = 1
         self.roverTarget = None  # Target object that robot is carrying
         self.targetCoords = []
+        self.searchRadius = 21  # Needs to be odd
 
         # Rover State Variables
         self.isCarrying = False
@@ -124,14 +125,19 @@ class Rover(object):
         """
         Rotates the image of the rover by certain degrees.
         :param angle:(int) Number of degrees the image will be rotated counterclockwise.
-        :return:
+        :return: none
         """
         self.angle = angle
 
     def isInsideArena(self, radius):
+        """
+        Verifies rover is inside the arena.
+        :param radius: Extends the rovers size by such radius.
+        :return: True if rover is inside the arena, else False
+        """
         x, y = self.posCenter
         x, y = int(x), int(y)
-        if x > radius - 1 and x < self.canvas_width - radius and y > radius - 1 and y < self.canvas_height - radius:
+        if x > radius and x < self.canvas_width - radius and y > radius and y < self.canvas_height - radius:
             return True
 
         return False
@@ -142,10 +148,10 @@ class Rover(object):
          Uses the robot as a convolving filter through the image.
         """
         map = self.canvasWindow.map_array
-        radius = 21 # has to be odd
+        radius = self.searchRadius
         x, y = self.posCenter
         x, y = int(x), int(y)
-        if self.isInsideArena(radius):
+        if self.isInsideArena(radius-1):
             roverKernel = map[x-radius:x+radius+1, y-radius:y+radius+1]
             centerIdx = np.array([(roverKernel.shape[0]-1)/2, (roverKernel.shape[0]-1)/2])
             for i in xrange(radius*2+1):
@@ -189,7 +195,6 @@ class Rover(object):
         centerVect = center - np.array(self.posCenter, dtype=int)
         angle = math.degrees(math.atan2(centerVect[1], centerVect[0]))
         self.rotate(-angle)
-        #print self.number,self.angle,'Angle:',angle, 'Slope:', centerVect[1], centerVect[0]
 
     def isInNest(self):
         """ Returns true if rover is inside the nest,
