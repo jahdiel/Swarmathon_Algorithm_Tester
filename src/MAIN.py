@@ -44,8 +44,13 @@ from El_Cuadrito import Cuadrito
 # ----------------------------
 # Set the Rover Class(inherited classes) you are using int RoverObj
 # Set the Algorithm Class(inherited classes) you are using int AlgoObj
+<<<<<<< HEAD
 RoverObj = RoverEstrellao
 AlgoObj = Estrella
+=======
+RoverObj = Rover
+AlgoObj = Cuadrito
+>>>>>>> e4aac1a6bf408f08a6d8a386a19ce136a4daf07c
 
 # Tkinter Master Object
 master = Tk()
@@ -54,8 +59,13 @@ master = Tk()
 canvasWindow = CanvasWindow(1000, 700, master)
 
 # Image Files
+<<<<<<< HEAD
 targetImg = "C:\Users\Brian\Documents\GitHub\Swarmathon_Algorithm_Tester\Media\Rock.png"
 roverImg = "C:\Users\Brian\Documents\GitHub\Swarmathon_Algorithm_Tester\Media\Rover1_PNG.png"
+=======
+targetImg = "C:\Users\jahdiel.alvarez\Documents\GitHub\Swarmathon_Algorithm_Tester\Media\Rock.png"
+roverImg = "C:\Users\jahdiel.alvarez\Documents\GitHub\Swarmathon_Algorithm_Tester\Media\Rover1_PNG.png"
+>>>>>>> e4aac1a6bf408f08a6d8a386a19ce136a4daf07c
 
 # Targets Object
 NUM_OF_TARGETS = 50

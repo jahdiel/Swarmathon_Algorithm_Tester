@@ -128,6 +128,14 @@ class Rover(object):
         """
         self.angle = angle
 
+    def isInsideArena(self, radius):
+        x, y = self.posCenter
+        x, y = int(x), int(y)
+        if x > radius - 1 and x < self.canvas_width - radius and y > radius - 1 and y < self.canvas_height - radius:
+            return True
+
+        return False
+
     def searchTarget(self):
         """
          Searches for a nearby target.
@@ -135,9 +143,9 @@ class Rover(object):
         """
         map = self.canvasWindow.map_array
         radius = 21 # has to be odd
-        x, y, a, b = self.pos
-        x, y = int(x) - self.sizeRadius, int(y) - self.sizeRadius
-        if x > radius - 1 and x < self.canvas_width - radius and y > radius - 1 and y < self.canvas_height - radius:
+        x, y = self.posCenter
+        x, y = int(x), int(y)
+        if self.isInsideArena(radius):
             roverKernel = map[x-radius:x+radius+1, y-radius:y+radius+1]
             centerIdx = np.array([(roverKernel.shape[0]-1)/2, (roverKernel.shape[0]-1)/2])
             for i in xrange(radius*2+1):
