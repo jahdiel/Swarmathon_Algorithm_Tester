@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0744284d-002a-47b9-a159-5cb911cfa60a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Estrella.py" afterPath="$PROJECT_DIR$/src/Estrella.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Targets.py" afterPath="$PROJECT_DIR$/src/Targets.py" />
     </list>
     <ignored path="Swarm_Algo_Tester.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,8 +36,8 @@
       <file leaf-file-name="Estrella.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Estrella.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="193">
+              <caret line="13" column="54" lean-forward="false" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -77,7 +78,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-419">
               <caret line="39" column="32" lean-forward="false" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
-              <folding />
+              <folding>
+                <marker date="1486597324418" expanded="true" signature="3197:3494" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -427,12 +430,19 @@
       <option name="project" value="LOCAL" />
       <updated>1486596495671</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="h">
+      <created>1486597314629</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1486597314629</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17203514" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -487,7 +497,8 @@
     <MESSAGE value="Merge branch 'Jahdiel' of https://github.com/jahdiel/Swarmathon_Algorithm_Tester into Brian&#10;&#10;# Conflicts:&#10;#&#9;.idea/Swarm_Algo_Tester.iml&#10;#&#9;.idea/misc.xml&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/MAIN.py&#10;" />
     <MESSAGE value="Commit changes clean" />
     <MESSAGE value="Merge branch 'Jahdiel' of https://github.com/jahdiel/Swarmathon_Algorithm_Tester into Brian&#10;&#10;# Conflicts:&#10;#&#9;src/Estrella.py&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'Jahdiel' of https://github.com/jahdiel/Swarmathon_Algorithm_Tester into Brian&#10;&#10;# Conflicts:&#10;#&#9;src/Estrella.py&#10;" />
+    <MESSAGE value="h" />
+    <option name="LAST_COMMIT_MESSAGE" value="h" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -524,7 +535,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1486597324418" expanded="true" signature="3197:3494" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -580,7 +593,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="22" column="84" lean-forward="false" selection-start-line="22" selection-start-column="84" selection-end-line="22" selection-end-column="84" />
-          <folding />
+          <folding>
+            <marker date="1486597324418" expanded="true" signature="3197:3494" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -628,7 +643,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="73" lean-forward="false" selection-start-line="11" selection-start-column="73" selection-end-line="11" selection-end-column="73" />
-          <folding />
+          <folding>
+            <marker date="1486597324418" expanded="true" signature="3197:3494" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -708,6 +725,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Targets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-419">
+          <caret line="39" column="32" lean-forward="false" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
+          <folding>
+            <marker date="1486597324418" expanded="true" signature="3197:3494" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/RoverEstrellao.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -716,18 +743,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Targets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-419">
-          <caret line="39" column="32" lean-forward="false" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Estrella.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="193">
+          <caret line="13" column="54" lean-forward="false" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
           <folding />
         </state>
       </provider>

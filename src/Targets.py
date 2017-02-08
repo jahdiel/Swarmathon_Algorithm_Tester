@@ -76,6 +76,12 @@ class Targets:
                 return target
 
     def removeTarget(self, target):
-
-        self.targetsList.remove(target)
-        self.size = len(self.targetsList)
+        """
+        Removes specified target from the targets list.
+        :param target: Target object
+        :return: void
+        """
+        if target:
+            self.targetsList.remove(target)
+            self.size = len(self.targetsList)
+            print 'Target List Size:', self.size
