@@ -142,6 +142,7 @@ class Rover(object):
 
         return False
 
+
     def searchTarget(self):
         """
          Searches for a nearby target.
@@ -166,8 +167,6 @@ class Rover(object):
                         self.targetCoords.append(coords)
                         print 'Found a Target!!!!!!'
                         return coords, True
-        else:
-            self.rotate(self.angle+180)
 
         return None, False
 

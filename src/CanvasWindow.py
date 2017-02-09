@@ -51,7 +51,7 @@ class CanvasWindow:
         self.canvas = Canvas(self.master, width=width, height=height)
         self.width = width
         self.height = height
-        self.map_array = np.zeros((width, height))
+        self.map_array = np.zeros((width+2, height+2))
 
         # Nest Variables
         self.center = (self.width / 2, self.height / 2)
