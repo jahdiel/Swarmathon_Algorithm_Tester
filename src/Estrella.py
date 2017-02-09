@@ -4,9 +4,20 @@ import random
 class Estrella(Algorithm):
 
     def __init__(self, CanvasWindow, RoverCluster, Targets, FrameRate):
+        """
+        Constructor for Estrella Algorithm
+        :param CanvasWindow:
+        :param RoverCluster:
+        :param Targets:
+        :param FrameRate:
+        """
         super(Estrella, self).__init__(CanvasWindow, RoverCluster, Targets, FrameRate)
 
     def mainAlgorithm(self):
+        """
+        This method implement the main Estrella algorithm
+        :return: void
+        """
 
         for rover in self.roverCluster.roverList:
             rover.move()

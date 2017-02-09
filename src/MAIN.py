@@ -58,7 +58,7 @@ targetImg = "C:\Users\Brian\Documents\GitHub\Swarmathon_Algorithm_Tester\Media\R
 roverImg = "C:\Users\Brian\Documents\GitHub\Swarmathon_Algorithm_Tester\Media\Rover1_PNG.png"
 
 # Targets Object
-NUM_OF_TARGETS = 50
+NUM_OF_TARGETS = 256
 targets = Targets(canvasWindow, NUM_OF_TARGETS, image=targetImg)
 
 # Rover Cluster
