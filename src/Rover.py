@@ -75,6 +75,7 @@ class Rover(object):
         self.roverTarget = None  # Target object that robot is carrying
         self.targetCoords = []
         self.searchRadius = 21  # Needs to be odd
+        self.targetsCaptured = 0  # Amount of targets the rover has captured
 
         # Rover State Variables
         self.isCarrying = False
@@ -218,6 +219,11 @@ class Rover(object):
             self.canvasWindow.canvas.delete(self.roverTarget.id)
             roverTarget = self.roverTarget
             self.roverTarget = None
+            self.targetsCaptured += 1
+            ######## For ToolBox Window ######
+            idx = self.number
+            self.canvasWindow.roverLabelList[idx].config(text="Rover "+str(idx)+": "+str(self.targetsCaptured))
+            ##################################
             return roverTarget
 
         return None

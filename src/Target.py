@@ -28,16 +28,13 @@ class Target:
         Parameters:
         ------------
             CanvasWindow: CanvasWindow object
-            CanvasWindow object where the target is in
-
+                CanvasWindow object where the target is in
             numberIndex: int
-            Index of the targer
-
+                Index of the targer
             image: Image file
-            Image of the target
-
+                Image of the target
             posTup: tuple
-            Position of the target
+                Position of the target
         Attributes:
         ------------
             canvasWindow: CanvasWindow object
@@ -52,11 +49,10 @@ class Target:
 
         """
 
-
         self.canvasWindow = CanvasWindow
         self.canvas = CanvasWindow.canvas
 
-        self.img, self.imgPIL = CanvasWindow.imageFormatting(image, (8, 8))
+        self.img, self.imgPIL = CanvasWindow.imageFormatting(image, (3, 3))
         self.width, self.height = self.imgPIL.size
 
         self.index = numberIndex

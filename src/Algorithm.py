@@ -19,6 +19,7 @@ ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEAL
 
 
 """
+import time
 class Algorithm(object):
 
     def __init__(self, CanvasWindow, RoverCluster, Targets, FrameRate):
@@ -48,6 +49,7 @@ class Algorithm(object):
         self.roverCluster = RoverCluster
         self.targets = Targets
         self.framerate = FrameRate
+        self.initTime = time.time()
 
     def mainAlgorithm(self):
         """
@@ -79,5 +81,9 @@ class Algorithm(object):
         """
         self.mainAlgorithm()
 
+        ##### ToolBox Window #####
+        d_time = time.time()-self.initTime
+        self.canvasWindow.tbwTime.config(text='Time Taken: {0:.2f} s'.format(d_time))
+        ##########################
         self.canvasWindow.master.update_idletasks()
         self.canvasWindow.master.after(self.framerate, self.updateRovers)
