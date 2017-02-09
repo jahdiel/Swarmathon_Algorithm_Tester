@@ -29,7 +29,37 @@ class Estrella(Algorithm):
 
             if not rover.isInsideArena(rover.searchRadius):
                 rover.foundBorder = True
-                rover.returnToNest()
+                if rover.insideAngle():
+                    if rover.angle > 45 and rover.angle <135:
+                     rover.rotate(180)
+                     rover.move()
+                     rover.move()
+                     rover.move()
+                     rover.move()
+                     rover.returnToNest()
+#                    rover.rotate(a + 180)
+                    else:
+                        rover.rotate(360)
+                        rover.move()
+                        rover.move()
+                        rover.move()
+                        rover.move()
+                        rover.returnToNest()
+                        if rover.angle == 45 or 135 or 225 or 315:
+                            rover.returnToNest()
+
+                else:
+
+#                rover.returnToNest()
+                    rover.rotate(rover.angle+ 90)
+                    rover.move()
+                    rover.move()
+                    rover.move()
+                    rover.move()
+                    rover.returnToNest()
+#                    rover.rotate(rover.angle+ 90)
+# #                rover.searchTarget()
+# #                rover.returnToNest()
 
             if rover.isInNest():
                 if rover.foundBorder:

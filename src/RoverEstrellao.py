@@ -21,3 +21,11 @@ class RoverEstrellao(Rover):
         center = np.array(self.canvasWindow.center)
         radius = self.canvasWindow.radius - 30
         return np.linalg.norm(self.posCenter - center) <= radius
+
+    def insideAngle(self):
+
+        if self.angle >= 45 and self.angle <=135 or self.angle >= 225 and self.angle <= 315:
+            return True
+
+
+
