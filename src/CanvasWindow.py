@@ -25,7 +25,7 @@ import numpy as np
 
 class CanvasWindow:
 
-    def __init__(self, width, height, master=None):
+    def __init__(self, width, height, numOfRovers, master=None):
         """ Initializes the Rover class.
             Attributes:
             ------------
@@ -48,10 +48,18 @@ class CanvasWindow:
             self.master = master
         else:
             self.master = Tk()
+        self.master.title("Swarmathon Algorithm Tester")
         self.canvas = Canvas(self.master, width=width, height=height)
         self.width = width
         self.height = height
-        self.map_array = np.zeros((width, height))
+        self.map_array = np.zeros((width+2, height+2))
+        self.numOfRovers = numOfRovers
+
+        # Tools Window
+        self.toolBoxWindow, self.tbwCaptured, self.tbwTime = None, None, None
+        self.roverLabelList = []
+        self.createToolBoxWindow()
+
 
         # Nest Variables
         self.center = (self.width / 2, self.height / 2)
@@ -63,6 +71,24 @@ class CanvasWindow:
         """ Creates the Nest in the middle of the canvas."""
         radius = self.radius
         return self.canvas.create_rectangle(self.center[0]-radius, self.center[1]-radius, self.center[0]+radius, self.center[1]+radius, fill='green')
+
+    def createToolBoxWindow(self):
+        """
+        Creates the tool box side window.
+        :return: void
+        """
+        self.toolBoxWindow = Toplevel(self.canvas, width=200, height=600)
+        self.toolBoxWindow.title("ToolBox Window")
+        Label(self.toolBoxWindow, text="Targets Captured:", anchor='w').pack(fill=X)
+        self.tbwCaptured = Label(self.toolBoxWindow, text="-1", anchor='w')
+        self.tbwCaptured.pack(fill=X)
+        Label(self.toolBoxWindow, text="Targets Captured per Rover:", anchor='w').pack(fill=X)
+        for i in xrange(self.numOfRovers):
+            self.roverLabelList.append(Label(self.toolBoxWindow, anchor='w', text="Rover "+str(i)+": 0"))
+            self.roverLabelList[i].pack(fill=X)
+        self.tbwTime = Label(self.toolBoxWindow, text='Time Taken: 0.00s')
+        self.tbwTime.pack(fill=X)
+
 
     @staticmethod
     def imageFormatting(image, resizeTup):

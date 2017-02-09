@@ -21,6 +21,7 @@ ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEAL
 """
 import numpy as np
 from Target import Target
+from Tkinter import Label
 
 class Targets:
 
@@ -43,7 +44,6 @@ class Targets:
                    canvas_width:
                """
 
-
         self.canvasWindow = CanvasWindow
         self.numOfTargets = numOfTargets
         self.targetCoords = self.generateTargetCoordinates()
@@ -56,6 +56,7 @@ class Targets:
         # Canvas variables
         self.canvas_height = self.canvasWindow.canvas.winfo_height()
         self.canvas_width = self.canvasWindow.canvas.winfo_width()
+        self.canvasWindow.tbwCaptured.config(text=self.size)
 
     def generateTargetCoordinates(self):
         """ Generate a list of tuples with the coordinates of the targets"""
@@ -76,6 +77,15 @@ class Targets:
                 return target
 
     def removeTarget(self, target):
-
-        self.targetsList.remove(target)
-        self.size = len(self.targetsList)
+        """
+        Removes specified target from the targets list.
+        :param target: Target object
+        :return: void
+        """
+        if target:
+            self.targetsList.remove(target)
+            self.size = len(self.targetsList)
+            ######## For ToolBox Window ######
+            self.canvasWindow.tbwCaptured.config(text=str(self.numOfTargets - self.size)+' of '+str(self.numOfTargets))
+            ##################################
+            print 'Target List Size:', self.size
