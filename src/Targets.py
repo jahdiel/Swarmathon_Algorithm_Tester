@@ -59,7 +59,10 @@ class Targets:
         self.canvasWindow.tbwCaptured.config(text=self.size)
 
     def generateTargetCoordinates(self):
-        """ Generate a list of tuples with the coordinates of the targets"""
+        """
+        Generate a list of tuples with the coordinates of the targets
+        :return:
+        """
         rand_x = np.random.randint(20, self.canvasWindow.width,size=self.numOfTargets)
         rand_y = np.random.randint(20, self.canvasWindow.height, size=self.numOfTargets)
 
