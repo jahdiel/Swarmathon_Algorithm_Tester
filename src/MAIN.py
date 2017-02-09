@@ -47,23 +47,28 @@ from El_Cuadrito import Cuadrito
 RoverObj = RoverEstrellao
 AlgoObj = Estrella
 
+######## PARAMETERS TO ADJUST #########
+
+NUM_OF_TARGETS = 50  # Set the number of targets
+NUM_OF_ROVERS = 4    # Set the number of rovers
+
+#######################################
+
 # Tkinter Master Object
 master = Tk()
 
 # Canvas Object
-canvasWindow = CanvasWindow(1000, 700, master)
+canvasWindow = CanvasWindow(700, 700, NUM_OF_ROVERS, master)
 
 # Image Files
 targetImg = "C:\Users\jahdiel.alvarez\Documents\GitHub\Swarmathon_Algorithm_Tester\Media\Rock.png"
 roverImg = "C:\Users\jahdiel.alvarez\Documents\GitHub\Swarmathon_Algorithm_Tester\Media\Rover1_PNG.png"
 
 # Targets Object
-NUM_OF_TARGETS = 50
 targets = Targets(canvasWindow, NUM_OF_TARGETS, image=targetImg)
 
 # Rover Cluster
 roverCluster = RoverCluster(canvasWindow)
-NUM_OF_ROVERS = 4
 
 # Set Rovers
 for i in xrange(NUM_OF_ROVERS):
