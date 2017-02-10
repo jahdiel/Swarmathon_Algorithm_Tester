@@ -1,5 +1,4 @@
 from Algorithm import *
-import random
 
 class Estrella(Algorithm):
 
@@ -72,7 +71,7 @@ class Estrella(Algorithm):
                         rover.move()
                         rover.move()
                         rover.returnToNest()
-        #
+
             if rover.isInNest():
                 if rover.foundBorder:
                     rover.foundBorder = False

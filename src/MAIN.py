@@ -28,6 +28,7 @@ from Algorithm import Algorithm
 from Tkinter import *
 from Estrella import Estrella
 from RoverEstrellao import RoverEstrellao
+from Cuadrito2 import Cuadrito2
 
 # Algorithms
 from El_Cuadrito import Cuadrito
