@@ -47,20 +47,32 @@ class Estrella(Algorithm):
                         rover.returnToNest()
                         if rover.angle == 45 or 135 or 225 or 315:
                             rover.returnToNest()
-
-                else:
-
-#                rover.returnToNest()
-                    rover.rotate(rover.angle+ 90)
-                    rover.move()
-                    rover.move()
-                    rover.move()
-                    rover.move()
-                    rover.returnToNest()
-#                    rover.rotate(rover.angle+ 90)
-# #                rover.searchTarget()
-# #                rover.returnToNest()
-
+                if rover.sidesDegrees():
+                    if rover.angle > 135 and rover.angle < 225:
+                        rover.rotate(270)
+                        rover.move()
+                        rover.move()
+                        rover.move()
+                        rover.move()
+                        rover.returnToNest()
+                        if rover.angle < 360 and rover.angle > 315:
+                            rover.rotate(90)
+                            rover.move()
+                            rover.move()
+                            rover.move()
+                            rover.move()
+                            rover.returnToNest()
+                            if rover.angle > 360:
+                                rover.returnToNest()
+                                rover.angle = 0
+                    else:
+                        rover.rotate(90)
+                        rover.move()
+                        rover.move()
+                        rover.move()
+                        rover.move()
+                        rover.returnToNest()
+        #
             if rover.isInNest():
                 if rover.foundBorder:
                     rover.foundBorder = False

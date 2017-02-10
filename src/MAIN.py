@@ -79,7 +79,7 @@ for i in xrange(NUM_OF_ROVERS):
 roverCluster.setRoversInNest()
 
 # Algorithm Object inherited from Algorithm Class
-FRAMERATE = 1
+FRAMERATE = 10
 algorithm = AlgoObj(canvasWindow, roverCluster, targets, FRAMERATE)
 
 # Update Canvas
