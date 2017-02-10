@@ -85,3 +85,4 @@ class Estrella(Algorithm):
 
                 target = rover.resetInNest()
                 self.targets.removeTarget(target)
+
