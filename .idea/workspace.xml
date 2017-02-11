@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0744284d-002a-47b9-a159-5cb911cfa60a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Estrella.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/RoverEstrellao.py" />
+    <list default="true" id="0744284d-002a-47b9-a159-5cb911cfa60a" name="Default" comment="Merge branches 'Brian' and 'Jahdiel' of https://github.com/jahdiel/Swarmathon_Algorithm_Tester into Jahdiel&#10;&#10;&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Algorithm.py" afterPath="$PROJECT_DIR$/src/Algorithm.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MAIN.py" afterPath="$PROJECT_DIR$/src/MAIN.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rover.py" afterPath="$PROJECT_DIR$/src/Rover.py" />
     </list>
     <ignored path="Swarm_Algo_Tester.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,8 +26,8 @@
       <file leaf-file-name="MAIN.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MAIN.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1562">
-              <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+            <state relative-caret-position="1100">
+              <caret line="60" column="53" lean-forward="false" selection-start-line="60" selection-start-column="53" selection-end-line="60" selection-end-column="53" />
               <folding>
                 <element signature="e#1118#1155#0" expanded="true" />
               </folding>
@@ -43,8 +38,8 @@
       <file leaf-file-name="RoverEstrellao.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/RoverEstrellao.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="286">
+              <caret line="13" column="25" lean-forward="false" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -53,15 +48,17 @@
       <file leaf-file-name="Estrella.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Estrella.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="19" column="40" lean-forward="false" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-              <folding />
+            <state relative-caret-position="462">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="El_Cuadrito.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/El_Cuadrito.py">
+      <file leaf-file-name="RoverCluster.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/RoverCluster.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="440">
               <caret line="20" column="3" lean-forward="false" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
@@ -73,21 +70,9 @@
       <file leaf-file-name="Target.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Target.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="20" column="3" lean-forward="false" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+            <state relative-caret-position="462">
+              <caret line="21" column="12" lean-forward="false" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Targets.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Targets.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="20" column="3" lean-forward="false" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
-              <folding>
-                <element signature="e#1117#1135#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -95,8 +80,8 @@
       <file leaf-file-name="Rover.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Rover.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1672">
-              <caret line="79" column="27" lean-forward="false" selection-start-line="79" selection-start-column="27" selection-end-line="79" selection-end-column="27" />
+            <state relative-caret-position="347">
+              <caret line="193" column="21" lean-forward="false" selection-start-line="193" selection-start-column="21" selection-end-line="193" selection-end-column="21" />
               <folding>
                 <element signature="e#1117#1138#0" expanded="true" />
               </folding>
@@ -104,11 +89,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RoverCluster.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/RoverCluster.py">
+      <file leaf-file-name="CanvasWindow.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CanvasWindow.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="20" column="3" lean-forward="false" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+            <state relative-caret-position="1892">
+              <caret line="88" column="74" lean-forward="false" selection-start-line="88" selection-start-column="74" selection-end-line="88" selection-end-column="74" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Algorithm.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Algorithm.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1958">
+              <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -144,14 +139,16 @@
         <option value="$PROJECT_DIR$/Background_Arena.py" />
         <option value="$PROJECT_DIR$/src/Background_Arena.py" />
         <option value="$PROJECT_DIR$/src/scratch.py" />
-        <option value="$PROJECT_DIR$/src/Algorithm.py" />
-        <option value="$PROJECT_DIR$/src/CanvasWindow.py" />
         <option value="$PROJECT_DIR$/src/El_Cuadrito.py" />
         <option value="$PROJECT_DIR$/src/RoverCluster.py" />
+        <option value="$PROJECT_DIR$/src/RoverEstrellao.py" />
+        <option value="$PROJECT_DIR$/src/Estrella.py" />
         <option value="$PROJECT_DIR$/src/Target.py" />
+        <option value="$PROJECT_DIR$/src/MAIN.py" />
+        <option value="$PROJECT_DIR$/src/CanvasWindow.py" />
+        <option value="$PROJECT_DIR$/src/Algorithm.py" />
         <option value="$PROJECT_DIR$/src/Targets.py" />
         <option value="$PROJECT_DIR$/src/Rover.py" />
-        <option value="$PROJECT_DIR$/src/MAIN.py" />
       </list>
     </option>
   </component>
@@ -421,6 +418,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="0744284d-002a-47b9-a159-5cb911cfa60a" name="Default" comment="" />
@@ -457,7 +457,56 @@
       <option name="project" value="LOCAL" />
       <updated>1486517877713</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Merge branches 'Brian' and 'Jahdiel' of https://github.com/jahdiel/Swarmathon_Algorithm_Tester into Jahdiel&#10;&#10;&#10;">
+      <created>1486570272136</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1486570272136</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Optimizations to the insideArena method inside the rover class. Added instance variable self.searchRadius in Rover class, this  variable specifies the the radius the rover uses when searching for targets.">
+      <created>1486596060457</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1486596060457</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Optimized use of removeTraget method from Targets class.&#10;">
+      <created>1486597255326</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1486597255326</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Merge branches 'Brian' and 'Jahdiel' of https://github.com/jahdiel/Swarmathon_Algorithm_Tester into Jahdiel&#10;&#10;&#10;">
+      <created>1486603309804</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1486603309804</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Merge branches 'Brian' and 'Jahdiel' of https://github.com/jahdiel/Swarmathon_Algorithm_Tester into Jahdiel&#10;&#10;&#10;">
+      <created>1486617546350</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1486617546350</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Merge branches 'Brian' and 'Jahdiel' of https://github.com/jahdiel/Swarmathon_Algorithm_Tester into Jahdiel&#10;&#10;&#10;">
+      <created>1486618224984</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1486618224984</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Merge branches 'Brian' and 'Jahdiel' of https://github.com/jahdiel/Swarmathon_Algorithm_Tester into Jahdiel&#10;&#10;&#10;">
+      <created>1486857259387</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1486857259387</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView">
@@ -473,10 +522,10 @@
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12691697" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16446325" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956153" sideWeight="0.497358" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33182332" sideWeight="0.5087255" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33182332" sideWeight="0.49127445" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17214043" sideWeight="0.43736818" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17432784" sideWeight="0.48966682" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281471" sideWeight="0.497358" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -485,7 +534,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22310306" sideWeight="0.4949762" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17432784" sideWeight="0.5626318" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -508,7 +557,10 @@
     <MESSAGE value="Licensing Comments into Source Files" />
     <MESSAGE value="Add border checker." />
     <MESSAGE value="Add border checker method." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add border checker method." />
+    <MESSAGE value="Optimizations to the insideArena method inside the rover class. Added instance variable self.searchRadius in Rover class, this  variable specifies the the radius the rover uses when searching for targets." />
+    <MESSAGE value="Optimized use of removeTraget method from Targets class.&#10;" />
+    <MESSAGE value="Merge branches 'Brian' and 'Jahdiel' of https://github.com/jahdiel/Swarmathon_Algorithm_Tester into Jahdiel&#10;&#10;&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branches 'Brian' and 'Jahdiel' of https://github.com/jahdiel/Swarmathon_Algorithm_Tester into Jahdiel&#10;&#10;&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -521,7 +573,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="20" column="3" lean-forward="false" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -537,9 +588,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="20" column="3" lean-forward="false" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
-          <folding>
-            <element signature="e#1117#1135#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -575,7 +623,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="20" column="3" lean-forward="false" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -591,9 +638,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="20" column="3" lean-forward="false" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
-          <folding>
-            <element signature="e#1117#1135#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -629,7 +673,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="3" lean-forward="false" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -645,9 +688,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#1117#1135#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -688,9 +728,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#1117#1135#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -748,9 +785,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="22" column="84" lean-forward="false" selection-start-line="22" selection-start-column="84" selection-end-line="22" selection-end-column="84" />
-          <folding>
-            <element signature="e#1117#1135#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -800,9 +834,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="73" lean-forward="false" selection-start-line="11" selection-start-column="73" selection-end-line="11" selection-end-column="73" />
-          <folding>
-            <element signature="e#1117#1135#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -836,24 +867,17 @@
     <entry file="file://$PROJECT_DIR$/src/Background_Arena.py" />
     <entry file="file://$PROJECT_DIR$/src/my.png" />
     <entry file="file://$PROJECT_DIR$/src/scratch.py" />
-    <entry file="file://$PROJECT_DIR$/src/Algorithm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="3" lean-forward="false" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CanvasWindow.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="3" lean-forward="false" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/El_Cuadrito.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="20" column="3" lean-forward="false" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RoverEstrellao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="25" lean-forward="false" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -866,57 +890,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Target.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="3" lean-forward="false" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Targets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="3" lean-forward="false" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
-          <folding>
-            <element signature="e#1117#1135#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Rover.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1672">
-          <caret line="79" column="27" lean-forward="false" selection-start-line="79" selection-start-column="27" selection-end-line="79" selection-end-column="27" />
-          <folding>
-            <element signature="e#1117#1138#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/MAIN.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1562">
-          <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+        <state relative-caret-position="1100">
+          <caret line="60" column="53" lean-forward="false" selection-start-line="60" selection-start-column="53" selection-end-line="60" selection-end-column="53" />
           <folding>
             <element signature="e#1118#1155#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/RoverEstrellao.py">
+    <entry file="file://$PROJECT_DIR$/src/Algorithm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="1958">
+          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CanvasWindow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1892">
+          <caret line="88" column="74" lean-forward="false" selection-start-line="88" selection-start-column="74" selection-end-line="88" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Targets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="63" column="21" lean-forward="false" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Target.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" column="12" lean-forward="false" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Rover.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="193" column="21" lean-forward="false" selection-start-line="193" selection-start-column="21" selection-end-line="193" selection-end-column="21" />
+          <folding>
+            <element signature="e#1117#1138#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Estrella.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="40" lean-forward="false" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-          <folding />
+        <state relative-caret-position="462">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
