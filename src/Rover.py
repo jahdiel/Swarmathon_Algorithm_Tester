@@ -189,7 +189,9 @@ class Rover(object):
         return False
 
     def returnToNest(self):
-        """ Make the rover return to the nest.
+        """
+        Make the rover return to the nest.
+        :return: void
         """
         center = np.array(self.canvasWindow.center)
         centerVect = center - np.array(self.posCenter, dtype=int)
