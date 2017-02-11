@@ -29,30 +29,4 @@ class RoverEstrellao(Rover):
         radius = self.canvasWindow.radius - 30
         return np.linalg.norm(self.posCenter - center) <= radius
 
-    def insideAngle(self):
-        """ These ranges of angles helps to control
-            better the rover and maintain it inside the arena.
 
-            Rover Angle(RA) ranges; 45 <= RA <= 135
-            OR 225 <= RA <= 315
-
-        :return: True if is inside one of the ranges, otherwise False.
-        """
-        if self.angle >= 45 and self.angle <=135 or self.angle >= 225 and self.angle <= 315:
-            return True
-
-    def sidesDegrees(self):
-        """ These ranges of angles helps to control
-            better the rover and maintain it inside the arena.
-
-            Rover Angle(RA) ranges;
-            0 <= RA < 45      OR
-            135 < RA < 225    OR
-            315 < RA < 360    OR
-            RA > 360
-
-        :returns: True if is inside one of the ranges, otherwise false.
-        """
-
-        if self.angle < 45 and self.angle >= 0 or self.angle < 360 and self.angle > 315 or self.angle > 135 and self.angle < 225 or self.angle > 360:
-            return True

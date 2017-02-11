@@ -19,7 +19,6 @@ ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEAL
 
 
 """
-
 from CanvasWindow import CanvasWindow
 from Rover import Rover
 from RoverCluster import RoverCluster
@@ -29,6 +28,7 @@ from Tkinter import *
 from Estrella import Estrella
 from RoverEstrellao import RoverEstrellao
 from Cuadrito2 import Cuadrito2
+from EstrellaBorderMove import EstrellaBorderMove
 
 # Algorithms
 from El_Cuadrito import Cuadrito
@@ -46,7 +46,7 @@ from El_Cuadrito import Cuadrito
 # Set the Rover Class(inherited classes) you are using int RoverObj
 # Set the Algorithm Class(inherited classes) you are using int AlgoObj
 RoverObj = RoverEstrellao
-AlgoObj = Estrella
+AlgoObj = EstrellaBorderMove
 
 ######## PARAMETERS TO ADJUST #########
 
