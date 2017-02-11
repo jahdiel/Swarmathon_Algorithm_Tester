@@ -24,6 +24,12 @@ class Cuadrito2(Algorithm):
         return
 
     def squareMove(self, rover, step):
+        """
+        Makes square pattern on one rover.
+        :param rover:
+        :param step:
+        :return:
+        """
         if rover.angle == 0:
             self.counter += 1
             if self.counter == self.d_m - 10 and self.start:
@@ -67,7 +73,6 @@ class Cuadrito2(Algorithm):
                 self.counter += 1
                 if self.counter == self.d_m:
                     rover.rotate(0)
-                    #self.epsilon += step
                     self.epsilon = 10
                     self.is360 = False
                     self.counter = 0

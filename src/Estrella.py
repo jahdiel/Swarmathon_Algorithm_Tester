@@ -14,8 +14,16 @@ class Estrella(Algorithm):
 
     def mainAlgorithm(self):
         """
-        This method implement the main Estrella algorithm
-        :return: void
+        This method implement the main Estrella algorithm.
+        -Search
+        -Move
+        -Return to Nest
+        -If rover is Inside Arena --> Reach the border?
+        -If rover is Inside Angle --> Turns x angle
+        -If rover is on sides Degrees --> Turns x angle
+        -If rover is In Nest --> Rotate rover fixed angle if found border(FB)
+         and turn FB = False... Otherwise rotate 180
+
         """
 
         for rover in self.roverCluster.roverList:
@@ -36,7 +44,6 @@ class Estrella(Algorithm):
                      rover.move()
                      rover.move()
                      rover.returnToNest()
-#                    rover.rotate(a + 180)
                     else:
                         rover.rotate(360)
                         rover.move()
@@ -75,7 +82,6 @@ class Estrella(Algorithm):
             if rover.isInNest():
                 if rover.foundBorder:
                     rover.foundBorder = False
-                    #rover.rotate(random.randint(0, 360))
                     rover.rotate(rover.angle+190)
                     for i in xrange(10):
                         rover.move()

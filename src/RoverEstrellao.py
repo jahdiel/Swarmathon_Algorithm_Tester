@@ -4,7 +4,7 @@ class RoverEstrellao(Rover):
 
     def __init__(self, CanvasWindow, pos_x, pos_y, number):
         """
-
+        Variables of Rover used on Estrella
         :param CanvasWindow:
         :param pos_x:
         :param pos_y:
@@ -23,11 +23,28 @@ class RoverEstrellao(Rover):
         return np.linalg.norm(self.posCenter - center) <= radius
 
     def insideAngle(self):
+        """
+        If the rover angle(RA) is; 45 <= RA <= 135
+        OR 225 <= RA <= 315 returns true, otherwise false.
 
+        These ranges of angles helps to control
+        better the rover and maintain it in the arena.
+        """
         if self.angle >= 45 and self.angle <=135 or self.angle >= 225 and self.angle <= 315:
             return True
 
     def sidesDegrees(self):
+        """
+        If the rover angle(RA) is;
+        0 <= RA < 45      OR
+        135 < RA < 225    OR
+        315 < RA < 360    OR
+        RA > 360
+        returns true, otherwise false.
+
+        These ranges of angles helps to control
+        better the rover and maintain it in the arena.
+        """
 
         if self.angle < 45 and self.angle >= 0 or self.angle < 360 and self.angle > 315 or self.angle > 135 and self.angle < 225 or self.angle > 360:
             return True
