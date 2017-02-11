@@ -43,6 +43,8 @@ class Algorithm(object):
             roverCluster : RoverCluster object
 
             targets : Target object
+
+        :return: None
         """
 
         self.canvasWindow = CanvasWindow
@@ -59,6 +61,8 @@ class Algorithm(object):
             If Target found -> Pick
             Return to nest
             When in Nest -> Reset Rover and Release the Target
+
+        :return: Void
         """
 
         for rover in self.roverCluster.roverList:
@@ -78,6 +82,8 @@ class Algorithm(object):
     def updateRovers(self):
         """ Updates the rovers.
         This is where the main algorithm should be implemented.
+
+        :return: None
         """
         self.mainAlgorithm()
 

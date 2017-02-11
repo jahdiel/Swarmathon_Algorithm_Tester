@@ -3,18 +3,23 @@ from Algorithm import *
 class Estrella(Algorithm):
 
     def __init__(self, CanvasWindow, RoverCluster, Targets, FrameRate):
-        """
-        Constructor for Estrella Algorithm
-        :param CanvasWindow:
-        :param RoverCluster:
-        :param Targets:
-        :param FrameRate:
+        """ Initializes the Estrella (Algorithm) class.
+            Constructor for Estrella Algorithm
+
+        :param CanvasWindow: CanvasWindow object
+        :param RoverCluster: RoverCluster object
+        :param Targets: Target object
+        :param FrameRate: int
+                The framerate of the canvas.
+                It is in frames per milliseconds.
+
+        :return: None
         """
         super(Estrella, self).__init__(CanvasWindow, RoverCluster, Targets, FrameRate)
 
     def mainAlgorithm(self):
-        """
-        This method implement the main Estrella algorithm.
+        """ This method implement the main Estrella algorithm.
+
         -Search
         -Move
         -Return to Nest
@@ -24,6 +29,7 @@ class Estrella(Algorithm):
         -If rover is In Nest --> Rotate rover fixed angle if found border(FB)
          and turn FB = False... Otherwise rotate 180
 
+         :return: None
         """
 
         for rover in self.roverCluster.roverList:

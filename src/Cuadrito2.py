@@ -3,7 +3,19 @@ from Algorithm import *
 class Cuadrito2(Algorithm):
 
     def __init__(self, CanvasWindow, RoverCluster, Targets, FrameRate):
+        """ Initializes the Cuadrito2 (Algorithm) class.
+
+        :param CanvasWindow: CanvasWindow object
+        :param RoverCluster: RoverCluster object
+        :param Targets: Target object
+        :param FrameRate: Int
+                    The framerate of the canvas.
+                    It is in frames per milliseconds.
+
+        :return: None
+        """
         Algorithm.__init__(self, CanvasWindow, RoverCluster, Targets, FrameRate)
+
 
         self.alpha = 20
         self.d_m = self.alpha
@@ -24,11 +36,11 @@ class Cuadrito2(Algorithm):
         return
 
     def squareMove(self, rover, step):
-        """
-        Makes square pattern on one rover.
-        :param rover:
-        :param step:
-        :return:
+        """ Makes square pattern on one rover.
+        :param rover: Rover object
+        :param step: NOT USED!!!!!!!!!
+
+        :return: None
         """
         if rover.angle == 0:
             self.counter += 1

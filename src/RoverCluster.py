@@ -31,6 +31,8 @@ class RoverCluster:
                 A rover list which has Rover objects as elements.
             canvasWindow : CanvasWindow object
                 CanvasWindow object in which the rovers inside roverList are in.
+
+        :return: None
         """
         self.roverList = []
         self.canvasWindow = canvasWindows
@@ -48,6 +50,8 @@ class RoverCluster:
 
         Note: The algorithm places the first rover in the initial position. Then places the next plus 180 degrees,
         of the first one and the next after that minus 180 - angleStepSize degrees.
+
+        :return: None
         """
         angleStepSize = 60  # in degrees
         angle = 0
@@ -71,6 +75,8 @@ class RoverCluster:
         ------------
             rover : Rover object
                 A rover object to be added to the cluster of rovers.
+
+        :return: None
         """
         self.roverList.append(rover)
 
