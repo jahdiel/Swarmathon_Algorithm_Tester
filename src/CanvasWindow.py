@@ -26,7 +26,7 @@ import numpy as np
 class CanvasWindow:
 
     def __init__(self, width, height, numOfRovers, master=None):
-        """ Initializes the Rover class.
+        """ Initializes the CanvasWindow class.
             Attributes:
             ------------
                 master : Tkinter object
@@ -42,8 +42,10 @@ class CanvasWindow:
                 nest : Canvas oval object
                     Oval object that represents the nest.
                 map_array : array
-                    An array filles with zeroes
-            """
+                    An array files with zeroes
+
+        :return: None
+        """
         if master is not None:
             self.master = master
         else:
@@ -68,13 +70,16 @@ class CanvasWindow:
 
 
     def createNest(self):
-        """ Creates the Nest in the middle of the canvas."""
+        """ Creates the Nest in the middle of the canvas.
+
+        :return: Nest
+        """
         radius = self.radius
         return self.canvas.create_rectangle(self.center[0]-radius, self.center[1]-radius, self.center[0]+radius, self.center[1]+radius, fill='green')
 
     def createToolBoxWindow(self):
-        """
-        Creates the tool box side window.
+        """ Creates the tool box side window.
+
         :return: void
         """
         self.toolBoxWindow = Toplevel(self.canvas, width=200, height=600)
@@ -98,6 +103,8 @@ class CanvasWindow:
         ------------
             image : string
                 File path to the image to be used for the rover.
+
+        :return: image
         """
         img = Image.open(image).rotate(-90)
         img = img.resize(resizeTup, Image.ANTIALIAS)  # Resize the image to desired size
@@ -110,7 +117,9 @@ class CanvasWindow:
         Parameters:
         -------------
             updateRoverFunct : function
-                Function which will update the rovers movement
+                    Function which will update the rovers movement
+
+        :return: void
         """
         self.canvas.pack()
         if updateRoverFunct is not None:

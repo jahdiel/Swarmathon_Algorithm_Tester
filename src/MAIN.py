@@ -19,7 +19,6 @@ ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEAL
 
 
 """
-
 from CanvasWindow import CanvasWindow
 from Rover import Rover
 from RoverCluster import RoverCluster
@@ -28,6 +27,8 @@ from Algorithm import Algorithm
 from Tkinter import *
 from Estrella import Estrella
 from RoverEstrellao import RoverEstrellao
+from Cuadrito2 import Cuadrito2
+from EstrellaBorderMove import EstrellaBorderMove
 
 # Algorithms
 from El_Cuadrito import Cuadrito
@@ -45,7 +46,7 @@ from El_Cuadrito import Cuadrito
 # Set the Rover Class(inherited classes) you are using int RoverObj
 # Set the Algorithm Class(inherited classes) you are using int AlgoObj
 RoverObj = RoverEstrellao
-AlgoObj = Estrella
+AlgoObj = EstrellaBorderMove
 
 ######## PARAMETERS TO ADJUST #########
 
@@ -61,8 +62,8 @@ master = Tk()
 canvasWindow = CanvasWindow(700, 700, NUM_OF_ROVERS, master)
 
 # Image Files
-targetImg = "C:\Users\jahdiel.alvarez\Documents\GitHub\Swarmathon_Algorithm_Tester\Media\Rock.png"
-roverImg = "C:\Users\jahdiel.alvarez\Documents\GitHub\Swarmathon_Algorithm_Tester\Media\Rover1_PNG.png"
+targetImg = "C:\Users\Brian\Documents\GitHub\Swarmathon_Algorithm_Tester\Media\Rock.png"
+roverImg = "C:\Users\Brian\Documents\GitHub\Swarmathon_Algorithm_Tester\Media\Rover1_PNG.png"
 
 # Targets Object
 targets = Targets(canvasWindow, NUM_OF_TARGETS, image=targetImg)
@@ -84,3 +85,4 @@ algorithm = AlgoObj(canvasWindow, roverCluster, targets, FRAMERATE)
 
 # Update Canvas
 canvasWindow.showUpdate(algorithm.updateRovers)
+

@@ -47,6 +47,7 @@ class Target:
             id:
             pos:
 
+        :return: None
         """
 
         self.canvasWindow = CanvasWindow

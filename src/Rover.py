@@ -94,6 +94,8 @@ class Rover(object):
                 Moves the rover to the x pixel in the horizontal direction.
             y : int
                 Moves the rover to the y pixel in the vertical direction.
+
+        :return: void
         """
         self.canvas.coords(self.id, (x-self.sizeRadius, y-self.sizeRadius, x+self.sizeRadius, y+self.sizeRadius))
         self.pos = self.canvas.coords(self.id)
@@ -101,8 +103,9 @@ class Rover(object):
 
 
     def getPositionCenter(self):
-        """
-        Gets the center position
+        """ Gets the center position
+
+        :return: Center
         """
         return np.array(self.pos)[:2] + [self.sizeRadius, self.sizeRadius]
 
@@ -148,6 +151,8 @@ class Rover(object):
         """
          Searches for a nearby target.
          Uses the robot as a convolving filter through the image.
+
+         :return: True if found target, otherwise False
         """
         map = self.canvasWindow.map_array
         radius = self.searchRadius
@@ -177,6 +182,8 @@ class Rover(object):
         ------------
             target : Target object
                 The target instance the rover found while searching.
+
+        :return: True, if picks target else False
         """
         if not self.isCarrying:
             self.roverTarget = target
@@ -199,8 +206,9 @@ class Rover(object):
         self.rotate(-angle)
 
     def isInNest(self):
-        """ Returns true if rover is inside the nest,
-        otherwise returns false.
+        """ Check if rover is inside the nest.
+
+        :return: True if inside the nest, else False
         """
         center = np.array(self.canvasWindow.center)
         radius = self.canvasWindow.radius - 10

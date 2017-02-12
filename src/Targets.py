@@ -61,7 +61,8 @@ class Targets:
     def generateTargetCoordinates(self):
         """
         Generate a list of tuples with the coordinates of the targets
-        :return: void
+
+        :return: numpy array with random coordinates as elements
         """
         rand_x = np.random.randint(20, self.canvasWindow.width,size=self.numOfTargets)
         rand_y = np.random.randint(20, self.canvasWindow.height, size=self.numOfTargets)
@@ -70,11 +71,14 @@ class Targets:
 
     def getTargetAtPos(self, posTup):
         """ Gets target at the specified position
-                Parameters:
-                ------------
+
+            Parameters:
+            ------------
                 posTup : array
-                An array to be searched
-          """
+                    An array to be searched
+
+        :return: target
+        """
         for target in self.targetsList:
             if np.array_equal(posTup, np.array(target.pos)):
                 return target
