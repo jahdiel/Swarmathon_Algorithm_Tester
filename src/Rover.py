@@ -74,7 +74,7 @@ class Rover(object):
         self.velocity = 1
         self.roverTarget = None  # Target object that robot is carrying
         self.targetCoords = []
-        self.searchRadius = 21  # Needs to be odd
+        self.searchRadius = 21 # Needs to be odd
         self.targetsCaptured = 0  # Amount of targets the rover has captured
 
         # Rover State Variables
@@ -160,17 +160,12 @@ class Rover(object):
         x, y = int(x), int(y)
         if self.isInsideArena(radius-1):
             roverKernel = map[x-radius:x+radius+1, y-radius:y+radius+1]
-            centerIdx = np.array([(roverKernel.shape[0]-1)/2, (roverKernel.shape[0]-1)/2])
+            centerIdx = np.array([(roverKernel.shape[0]-1)/2, (roverKernel.shape[1]-1)/2])
             for i in xrange(radius*2+1):
                 for j in xrange(radius*2+1):
                     if roverKernel[i][j] == 1:
                         d_list = np.array([i, j]) - centerIdx
                         coords = np.array([x, y]) + d_list
-                        for i in xrange(len(self.targetCoords)):  # Check if found target was already found by rover
-                            if np.array_equal(coords, self.targetCoords[i]):
-                                return None, False
-
-                        self.targetCoords.append(coords)
                         print 'Found a Target!!!!!!'
                         return coords, True
 

@@ -50,8 +50,8 @@ AlgoObj = EstrellaBorderMove
 
 ######## PARAMETERS TO ADJUST #########
 
-NUM_OF_TARGETS = 50  # Set the number of targets
-NUM_OF_ROVERS = 4    # Set the number of rovers
+NUM_OF_TARGETS = 200  # Set the number of targets
+NUM_OF_ROVERS = 1    # Set the number of rovers
 
 #######################################
 
@@ -62,8 +62,8 @@ master = Tk()
 canvasWindow = CanvasWindow(700, 700, NUM_OF_ROVERS, master)
 
 # Image Files
-targetImg = "C:\Users\Brian\Documents\GitHub\Swarmathon_Algorithm_Tester\Media\Rock.png"
-roverImg = "C:\Users\Brian\Documents\GitHub\Swarmathon_Algorithm_Tester\Media\Rover1_PNG.png"
+targetImg = "C:\Users\jahdiel.alvarez\Documents\GitHub\Swarmathon_Algorithm_Tester\Media\Rock.png"
+roverImg = "C:\Users\jahdiel.alvarez\Documents\GitHub\Swarmathon_Algorithm_Tester\Media\Rover1_PNG.png"
 
 # Targets Object
 targets = Targets(canvasWindow, NUM_OF_TARGETS, image=targetImg)
