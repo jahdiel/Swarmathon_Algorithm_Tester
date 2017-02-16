@@ -27,18 +27,17 @@ class Cuadrito2(Algorithm):
     def mainAlgorithm(self):
 
         for rover in self.roverCluster.roverList:
-            rover.move()
-            t_coords, found = rover.searchTarget()
+
+            t_coords, found = rover.moveAndSearch()
 
             if rover.number == 0:
-                self.squareMove(rover, 2)
+                self.squareMove(rover)
 
         return
 
-    def squareMove(self, rover, step):
+    def squareMove(self, rover):
         """ Makes square pattern on one rover.
         :param rover: Rover object
-        :param step: NOT USED!!!!!!!!!
 
         :return: None
         """

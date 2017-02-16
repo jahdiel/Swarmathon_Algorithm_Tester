@@ -125,6 +125,15 @@ class Rover(object):
         self.pos = self.canvas.coords(self.id)
         self.posCenter = self.getPositionCenter()
 
+    def moveAndSearch(self):
+        """
+        Moves the rover and searches the area to where it moved.
+        The rover will move with its velocity in the angle direction.
+        :return: void
+        """
+        self.move()
+        return self.searchTarget()
+
     def rotate(self, angle):
         """
         Rotates the image of the rover by certain degrees.

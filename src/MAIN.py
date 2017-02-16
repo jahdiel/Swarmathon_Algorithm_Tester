@@ -35,7 +35,6 @@ from El_Cuadrito import Cuadrito
 
 # Things To DO:
 #-------------------
-# TODO: Separate Window
 # TODO: Don't place targets inside the nest
 # TODO: Create the distributions of the targets
 #-------------------
@@ -45,13 +44,13 @@ from El_Cuadrito import Cuadrito
 # ----------------------------
 # Set the Rover Class(inherited classes) you are using int RoverObj
 # Set the Algorithm Class(inherited classes) you are using int AlgoObj
-RoverObj = RoverEstrellao
-AlgoObj = EstrellaBorderMove
+RoverObj = Rover
+AlgoObj = Cuadrito2
 
 ######## PARAMETERS TO ADJUST #########
 
-NUM_OF_TARGETS = 200  # Set the number of targets
-NUM_OF_ROVERS = 1    # Set the number of rovers
+NUM_OF_TARGETS = 100  # Set the number of targets
+NUM_OF_ROVERS = 4    # Set the number of rovers
 
 #######################################
 
